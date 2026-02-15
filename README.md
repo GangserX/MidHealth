@@ -22,7 +22,18 @@
 
 ---
 
-## � Screenshots
+## 📋 Deployed Contract
+
+| Field | Value |
+|-------|-------|
+| **Contract Address** | `10dbb900e355b98cf2b395e60228795e7189b7b845d9915ab2854a21da95bbbb` |
+| **Network** | Midnight Local Standalone (`undeployed`) |
+| **Compact Version** | `0.21` |
+| **Contract Name** | `PatientCredential` |
+
+---
+
+## 🖼 Screenshots
 
 <div align="center">
 
@@ -50,17 +61,6 @@
 <img src="docs/screenshots/05-verifier-result.png" alt="Verifier Checks Proof" width="800" />
 
 </div>
-
----
-
-## �📋 Deployed Contract
-
-| Field | Value |
-|-------|-------|
-| **Contract Address** | `10dbb900e355b98cf2b395e60228795e7189b7b845d9915ab2854a21da95bbbb` |
-| **Network** | Midnight Local Standalone (`undeployed`) |
-| **Compact Version** | `0.21` |
-| **Contract Name** | `PatientCredential` |
 
 ---
 
