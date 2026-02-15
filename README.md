@@ -22,7 +22,38 @@
 
 ---
 
-## 📋 Deployed Contract
+## � Screenshots
+
+<div align="center">
+
+### Landing Page — Wallet Connection
+<img src="docs/screenshots/01-wallet-connect.png" alt="MidHealth Landing Page" width="800" />
+
+<br /><br />
+
+### Connected — Role Selection
+<img src="docs/screenshots/02-connected-roles.png" alt="Wallet Connected & Role Selection" width="800" />
+
+<br /><br />
+
+### Doctor — Issue Healthcare Credential
+<img src="docs/screenshots/03-doctor-issue.png" alt="Doctor Issues Credential" width="800" />
+
+<br /><br />
+
+### Patient — Generate Zero-Knowledge Proof
+<img src="docs/screenshots/04-patient-prove.png" alt="Patient Proves Vaccination" width="800" />
+
+<br /><br />
+
+### Verifier — On-Chain Verification Result
+<img src="docs/screenshots/05-verifier-result.png" alt="Verifier Checks Proof" width="800" />
+
+</div>
+
+---
+
+## �📋 Deployed Contract
 
 | Field | Value |
 |-------|-------|
