@@ -62,6 +62,13 @@ export default function App() {
   const [status, setStatus] = useState<string>("");
   const [connecting, setConnecting] = useState(false);
 
+  const jumpToFlow = () => {
+    document.getElementById("app-flow")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   // ---- Wallet Connect ------------------------------------------------
   const connectWallet = useCallback(async () => {
     try {
@@ -178,21 +185,62 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <div className="logo-container">
-            <div className="logo-icon">🏥</div>
-            <span className="logo-text">MidHealth</span>
+          <div className="top-nav">
+            <div className="logo-container">
+              <div className="logo-icon">🏥</div>
+              <span className="logo-text">MidHealth</span>
+            </div>
+            <div className="header-badge">
+              <span className="dot" />
+              Local Network &middot; Zero-Knowledge Proofs
+            </div>
           </div>
-          <p className="app-tagline">
-            Privacy-Preserving Healthcare Attestation on{" "}
+
+          <div className="hero-eyebrow">For modern healthcare teams</div>
+          <h1 className="hero-heading">
+            Verify care records with a
+            <span> Shopify-grade product experience.</span>
+          </h1>
+          <p className="hero-subtitle">
+            MidHealth brings elegant onboarding, privacy-preserving credentials,
+            and instant proof verification into one clean workflow built on{" "}
             <a href="https://midnight.network/" target="_blank" rel="noreferrer">
               Midnight
             </a>
+            .
           </p>
-          <div className="header-badge">
-            <span className="dot" />
-            Local Network &middot; Zero-Knowledge Proofs
+
+          <div className="hero-actions">
+            <button className="btn btn-primary btn-lg" onClick={jumpToFlow}>
+              Launch dashboard
+            </button>
+            <a
+              className="btn btn-ghost btn-lg"
+              href="https://docs.midnight.network/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View documentation
+            </a>
+          </div>
+
+          <div className="metric-strip">
+            <div className="metric-item">
+              <span className="metric-value">Private by default</span>
+              <span className="metric-label">Raw data stays local</span>
+            </div>
+            <div className="metric-item">
+              <span className="metric-value">Single flow UX</span>
+              <span className="metric-label">Issue, prove, verify</span>
+            </div>
+            <div className="metric-item">
+              <span className="metric-value">ZK-secured</span>
+              <span className="metric-label">On-chain attestations</span>
+            </div>
           </div>
         </motion.header>
+
+        <section id="app-flow" />
 
         {/* Wallet Connection */}
         <motion.div
