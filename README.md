@@ -1,6 +1,6 @@
 <div align="center">
   
-#This project is built on the Midnight Network.
+This project is built on the Midnight Network.
   
 # 🏥 MidHealth
 
