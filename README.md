@@ -1,5 +1,7 @@
 <div align="center">
-
+  
+#This project is built on the Midnight Network.
+  
 # 🏥 MidHealth
 
 ### Privacy-Preserving Healthcare Attestation on Midnight
